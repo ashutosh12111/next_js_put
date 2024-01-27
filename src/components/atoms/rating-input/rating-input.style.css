@@ -1,0 +1,14 @@
+.table-rating .anticon{
+  @apply !h-[16px] !w-[16px]  text-[#D0D5DD];
+}
+.table-rating .ant-rate .ant-rate-star:not(:last-child){
+  @apply !mr-4;
+}
+
+.table-rating .ant-rate .ant-rate-star-full .ant-rate-star-first .anticon,.table-rating .ant-rate .ant-rate-star-full .ant-rate-star-second .anticon {
+  @apply text-[#F79009];
+}
+
+.table-rating .ant-rate .ant-rate-star-half .ant-rate-star-first .anticon {
+  @apply text-[#F79009];
+}

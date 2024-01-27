@@ -1,0 +1,7 @@
+.ant-slider-rail {
+  @apply !bg-[#C8DCEA];
+}
+
+.ant-slider-track {
+  @apply !bg-[#095EBA] !left-[-1px];
+}

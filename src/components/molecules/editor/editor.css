@@ -1,0 +1,125 @@
+.ck-toolbar {
+   position: relative;
+   /* Add other styling as needed */
+ }
+
+.ck.ck-balloon-panel {
+   display: none;
+   position: absolute;
+   z-index: 1 !important;
+   /* z-index: var(--ck-z-modal); */
+}
+
+.ck.ck-editor__editable_inline {
+ @apply !px-24;
+}
+
+.ck-editor__editable {
+  @apply text-white-para text-14 font-normal leading-24;
+}
+
+.ck-editor__editable a{
+  @apply text-blue-link underline;
+}
+
+.ck.ck-editor__editable_inline>:last-child {
+  @apply !mt-0 !mb-0;
+}
+
+.ck.ck-editor__editable_inline>:first-child {
+  @apply !mt-0;
+}
+
+.ck-placeholder {
+  @apply text-[#bab8ba99];
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+  @apply !border-transparent;
+}
+/* 
+.ck.ck-toolbar-container {
+  margin-top: -124px !important; 
+  margin-left: 418px !important;
+} */
+
+#content-container .description-paragraph.ck.ck-editor__editable_inline {
+   @apply !px-0 xl:!px-24 pt-16;
+}
+
+.ck.ck-editor__main>.ck-editor__editable,.ck.ck-toolbar {
+  @apply !bg-transparent;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+  @apply !p-10;
+}
+
+.ck-toolbar_grouping .ck.ck-icon.ck-icon_inherit-color {
+  @apply !text-white;
+}
+
+.ck-toolbar_grouping .ck.ck-button:not(.ck-disabled):hover,.ck-toolbar_grouping a.ck.ck-button:not(.ck-disabled):hover {
+  @apply !bg-[#b2b0b0];
+}
+
+.ck-toolbar_grouping .ck.ck-button.ck-on, a.ck.ck-button.ck-on {
+  @apply !bg-input-background;
+}
+
+.ck.ck-editor__editable_inline {
+  @apply !border-transparent;
+}
+
+.ck.ck-toolbar.ck-toolbar_grouping {
+  @apply !border-t-border-color !border-l-0 !border-b-transparent !border-r-0 !rounded-none;
+}
+
+.ck-content .image>figcaption {
+  @apply !bg-gray-500 !text-white-para !text-14 !font-normal !leading-24;
+}
+
+.ck.ck-sticky-panel__content_sticky {
+  @apply !relative !z-20;
+}
+
+.ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items {
+  @apply !flex-wrap;
+}
+
+.ck-content ol, .ck-content ul, .ck-content menu {
+   @apply !pl-30;
+}
+
+/* custom-scroll */
+/* width */
+.ck.ck-editor__main>.ck-editor__editable::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff0;
+}
+
+/* Track */
+.ck.ck-editor__main>.ck-editor__editable::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  /* border-radius: 10px; */
+  background-color: #fff0;
+}
+
+/* Handle */
+.ck.ck-editor__main>.ck-editor__editable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #c1c1c1c8;
+}
+
+.editor-wrapper:hover .ck.ck-toolbar.ck-toolbar_grouping {
+   @apply !border-t-blue-link;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+  box-shadow: none !important;
+}
+
+.ck-editor__editable a {
+  @apply !break-words !cursor-pointer;
+}
